@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://maraviyainfotech.com/projects/carrot/carrot-v11/carrot-html/assets/css/vendor/flaticons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="style/flaticons.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style/index.css" />
+</head>
+
+<body>
+    <div>
+        <!--Top navbar code-->
+        <nav class="flex justify-around items-center py-4">
+            <img src="images/logo.png" alt="logo" />
+            <form class="flex border-2 border-indigo-600 w-5/12 rounded">
+                <input name="keyword" class="flex-1 px-2 rounded" placeholder="Search this site" />
+                <select class="py-2 px-4 border-l-2 border-indigo-600">
+                    <option>All Categories</option>
+                    <option value="mens">Men`s</option>
+                    <option value="womens">Women`s</option>
+                    <option value="electronics">Electronics</option>
+                </select>
+                <button class="bg-indigo-600 py-2 px-4 text-white">
+                    <i class="ri-search-2-line"></i>
+                </button>
+            </form>
+            <div class="flex gap-6">
+                <button class="text-lg relative" id="account">
+                    <i class="ri-user-line"></i>
+                    Account
+                    <div class=" rounded bg-white border absolute top-10 right-0  w-[150px] flex flex-col"
+                        id="account-menu">
+                        <a href="register.html"
+                            class="text-sm w-full hover:bg-gray-100 text-left px-3 py-2">Register</a>
+                        <a href="checkout.html"
+                            class="text-sm w-full hover:bg-gray-100 text-left px-3 py-2">Checkout</a>
+                        <a href="login.html" class="text-sm w-full hover:bg-gray-100 text-left px-3 py-2">Login</a>
+                    </div>
+                </button>
+
+                <a href="wishlist.html">
+                    <button class="text-lg">
+                        <i class="ri-heart-line"></i>
+                        Wishlist
+                    </button>
+                </a>
+
+                <button class="text-lg" id="cart">
+                    <i class="ri-shopping-cart-line"></i>
+                    Cart
+                </button>
+            </div>
+        </nav>
+
+        <!--Main navbar code-->
+        <nav class="flex justify-around items-center py-4">
+            <button class="border text-xl w-12 h-12">
+                <i class="ri-menu-2-fill"></i>
+            </button>
+            <ul class="flex gap-12">
+                <li><a href="#" class="text-md font-semibold">Home</a></li>
+                <li><a href="#" class="text-md font-semibold">Category</a></li>
+                <li><a href="#" class="text-md font-semibold">Products</a></li>
+                <li><a href="#" class="text-md font-semibold">Blog</a></li>
+                <li><a href="#" class="text-md font-semibold">Contact</a></li>
+            </ul>
+            <select class="border py-2 px-16">
+                <option>Chicago</option>
+                <option>America</option>
+                <option>Nepal</option>
+                <option>India</option>
+                <option>Australia</option>
+            </select>
+        </nav>
+
+        
+        <section>
+            <!--Carousel code-->
+            <div id="hero">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" id="slide-1">
+                            <div class="h-full flex flex-col justify-center px-32 gap-6">
+                                <p class="font-bold text-2xl">
+                                    <span class="text-indigo-600 underline">100%</span> cotton Fabric
+                                </p>
+                                <h1 class="font-bold text-6xl">Fashion Sale for <br>Womens</h1>
+                                <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Voluptatibus nemo est dolorem!</p>
+                                <button class="bg-indigo-600 px-6 py-2.5 rounded-md font-bold text-white w-fit hover:bg-black">Shop Now</button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" id="slide-2">
+                            <div class="swiper-slide" id="slide-1">
+                                <div class="h-full flex flex-col justify-center px-32 gap-6">
+                                    <p class="font-bold text-2xl">
+                                        <span class="text-indigo-600 underline">100%</span> cotton Fabric
+                                    </p>
+                                    <h1 class="font-bold text-6xl">Explore jeans <br>summer sale</h1>
+                                    <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Voluptatibus nemo est dolorem!</p>
+                                    <button class="bg-indigo-600 px-6 py-2.5 rounded-md font-bold text-white w-fit hover:bg-black">Shop Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <!-- category -->
+            <div class="m-24 grid grid-cols-6 gap-6">
+                <div class="border bg-[#F7F7F8] flex flex-col gap-1 items-center justify-center h-[120px] rounded-xl relative">
+                    <h1 class="font-semibold text-lg">Shirt</h1>
+                    <label class="text-gray-500 text-sm">(67 items)</label>
+                    <div class="bg-[orange] w-[70px] h-[70px] rounded-full absolute flex justify-center items-center -top-10 border-white border-8 shadow cat-move">
+                        <img src="images/tshirt.png" width="40px">
+                    </div>
+                </div>
+                <div class="border bg-[#F7F7F8] flex flex-col gap-1 items-center justify-center h-[120px] rounded-xl relative">
+                    <h1 class="font-semibold text-lg">Hats</h1>
+                    <label class="text-gray-500 text-sm">(81 items)</label>
+                    <div class="bg-[orange] w-[70px] h-[70px] rounded-full absolute flex justify-center items-center -top-10 border-white border-8 shadow cat-move">
+                        <img src="images/cowboy.png" width="40px">
+                    </div>
+                </div>
+                <div class="border bg-[#F7F7F8] flex flex-col gap-1 items-center justify-center h-[120px] rounded-xl relative">
+                    <h1 class="font-semibold text-lg">Boot</h1>
+                    <label class="text-gray-500 text-sm">(32 items)</label>
+                    <div class="bg-[orange] w-[70px] h-[70px] rounded-full absolute flex justify-center items-center -top-10 border-white border-8 shadow cat-move">
+                        <img src="images/boot.png" width="40px">
+                    </div>
+                </div>
+                <div class="border bg-[#F7F7F8] flex flex-col gap-1 items-center justify-center h-[120px] rounded-xl relative">
+                    <h1 class="font-semibold text-lg">Top</h1>
+                    <label class="text-gray-500 text-sm">(78 items)</label>
+                    <div class="bg-[orange] w-[70px] h-[70px] rounded-full absolute flex justify-center items-center -top-10 border-white border-8 shadow cat-move">
+                        <img src="images/undershirt.png" width="40px">
+                    </div>
+                </div>
+                <div class="border bg-[#F7F7F8] flex flex-col gap-1 items-center justify-center h-[120px] rounded-xl relative">
+                    <h1 class="font-semibold text-lg">Vest</h1>
+                    <label class="text-gray-500 text-sm">(64 items)</label>
+                    <div class="bg-[orange] w-[70px] h-[70px] rounded-full absolute flex justify-center items-center -top-10 border-white border-8 shadow cat-move">
+                        <img src="images/cowboy.png" width="40px">
+                    </div>
+                </div>
+                <div class="border bg-[#F7F7F8] flex flex-col gap-1 items-center justify-center h-[120px] rounded-xl relative">
+                    <h1 class="font-semibold text-lg">Socks</h1>
+                    <label class="text-gray-500 text-sm">(67 items)</label>
+                    <div class="bg-[orange] w-[70px] h-[70px] rounded-full absolute flex justify-center items-center -top-10 border-white border-8 shadow cat-move">
+                        <img src="images/socks.png" width="40px">
+                    </div>
+                </div>
+            </div>
+            <!-- New Arrivals -->
+            <div class="m-24">
+                <h1 class="text-xl font-bold">New Arrivals</h1>
+                <p class="text-gray-600 mb-6 mt-1">Browse the collection of top products</p>
+                <div class="grid grid-cols-5 gap-6">
+                    <div class="border rounded-md">
+                        <div class="w-[250px] h-[250px] relative">
+                            <img src="images/naFront.jpg" alt="">
+                            <div class="bg-[#64B496] px-2 py-1 text-white text-xs absolute top-0 ">50% Sale</div>
+                        </div>
+                        <div class="border"></div>
+                        <div class="p-3 space-y-2">
+                            <div class="flex justify-between">
+                                <label class="text-gray-500">Women Tops</label>
+                                <div>
+                                    <i class="ri-star-line text-orange-600"></i>
+                                    <i class="ri-star-line text-rose-600"></i>
+                                    <i class="ri-star-line text-rose-600"></i>
+                                    <i class="ri-star-line text-rose-600"></i>
+                                    <i class="ri-star-line text-rose-600"></i>
+                                </div>
+                            </div>
+                            <p class="text-md font-semibold">Colorfull Top For Womens</p>
+                            <div class="flex gap-3 items-center">
+                                <label class="">$35.00</label>
+                                <del class="text-xs text-gray-500">$42.00</del>
+                            </div>
+                            <div class="flex justify-between">
+                                <div class="flex gap-2">
+                                    <button class="bg-slate-300 rounded w-[18px] h-[18px] hover:bg-slate-800"></button>
+                                    <button class="bg-indigo-300 rounded w-[18px] h-[18px] hover:bg-indigo-800"></button>
+                                    <img src="images/naFront.jpg" class="w-[18px] h-[18px] border rounded">
+                                </div>
+                                <div class="flex gap-2">
+                                    <button class="bg-slate-500 rounded text-white w-[18px] h-[18px] hover:bg-slate-800 text-xs">S</button>
+                                    <button disabled="true" class="bg-indigo-100 rounded w-[18px] h-[18px text-xs">M</button>
+                                    <!--disabled="true" it means button will not be clicked -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border rounded-md">
+                        <div class="w-[250px] h-[250px] relative">
+                            <img src="images/30.jpg" alt="">
+                            <div class="bg-[#7D76FF] px-2 py-1 text-white text-xs absolute top-0 ">Trending</div>
+                        </div>
+                        <div class="border"></div>
+                        <div class="p-3 space-y-2">
+                            <div class="flex justify-between">
+                                <label class="text-gray-500">Men T-shirt</label>
+                                <div>
+                                    <i class="ri-star-line text-orange-600"></i>
+                                    <i class="ri-star-line text-rose-600"></i>
+                                    <i class="ri-star-line text-rose-600"></i>
+                                    <i class="ri-star-line text-rose-600"></i>
+                                    <i class="ri-star-line text-rose-600"></i>
+                                </div>
+                            </div>
+                            <p class="text-md font-semibold">Blue T-Shirt for Men</p>
+                            <div class="flex gap-3 items-center">
+                                <label class="">$11.00</label>
+                                <del class="text-xs text-gray-500">$22.00</del>
+                            </div>
+                            <div class="flex justify-between">
+                                <div class="flex gap-2">
+                                    <button class="bg-slate-300 rounded w-[18px] h-[18px] hover:bg-slate-800"></button>
+                                    <button class="bg-indigo-300 rounded w-[18px] h-[18px] hover:bg-indigo-800"></button>
+                                    <img src="images/30.jpg" class="w-[18px] h-[18px] border rounded">
+                                </div>
+                                <div class="flex gap-2">
+                                    <button class="bg-slate-500 rounded text-white w-[18px] h-[18px] hover:bg-slate-800 text-xs">S</button>
+                                    <button disabled="true" class="bg-indigo-100 rounded w-[18px] h-[18px text-xs">M</button>
+                                    <!--disabled="true" it means button will not be clicked -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border rounded-md">
+                        <div class="w-[250px] h-[250px]">
+                            <img src="images/24.jpg" alt="">
+                        </div>
+                        <div class="border"></div>
+                        <div class="p-3 space-y-2">
+                            <div class="flex justify-between">
+                                <label class="text-gray-500">Kids</label>
+                                <div>
+                                    <i class="ri-star-line text-orange-600"></i>
+                                    <i class="ri-star-line text-rose-600"></i>
+                                    <i class="ri-star-line text-rose-600"></i>
+                                    <i class="ri-star-line text-rose-600"></i>
+                                    <i class="ri-star-line text-rose-600"></i>
+                                </div>
+                            </div>
+                            <p class="text-md font-semibold">Pink T-Shirts for Girl</p>
+                            <div class="flex gap-3 items-center">
+                                <label class="">$29.00</label>
+                                <del class="text-xs text-gray-500">$39.00</del>
+                            </div>
+                            <div class="flex justify-between">
+                                <div class="flex gap-2">
+                                    <button class="bg-slate-300 rounded w-[18px] h-[18px] hover:bg-slate-800"></button>
+                                    <button class="bg-indigo-300 rounded w-[18px] h-[18px] hover:bg-indigo-800"></button>
+                                    <img src="images/24.jpg" class="w-[18px] h-[18px] border rounded">
+                                </div>
+                                <div class="flex gap-2">
+                                    <button class="bg-slate-500 rounded text-white w-[18px] h-[18px] hover:bg-slate-800 text-xs">S</button>
+                                    <button disabled="true" class="bg-indigo-100 rounded w-[18px] h-[18px text-xs">M</button>
+                                    <!--disabled="true" it means button will not be clicked -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border rounded-md">
+                        <div class="w-[250px] h-[250px] relative">
+                            <img src="images/32.jpg" alt="">
+                            <div class="bg-[#FF5B5B] px-2 py-1 text-white text-xs absolute top-0 ">New</div>
+                        </div>
+                        <div class="border"></div>
+                        <div class="p-3 space-y-2">
+                            <div class="flex justify-between">
+                                <label class="text-gray-500">Shorts</label>
+                                <div>
+                                    <i class="ri-star-line text-orange-600"></i>
+                                    <i class="ri-star-line text-rose-600"></i>
+                                    <i class="ri-star-line text-rose-600"></i>
+                                    <i class="ri-star-line text-rose-600"></i>
+                                    <i class="ri-star-line text-rose-600"></i>
+                                </div>
+                            </div>
+                            <p class="text-md font-semibold">Girls Nightdress Shorts</p>
+                            <div class="flex gap-3 items-center">
+                                <label class="">$57.00</label>
+                                <del class="text-xs text-gray-500">$62.00</del>
+                            </div>
+                            <div class="flex justify-between">
+                                <div class="flex gap-2">
+                                    <button class="bg-slate-300 rounded w-[18px] h-[18px] hover:bg-slate-800"></button>
+                                    <button class="bg-indigo-300 rounded w-[18px] h-[18px] hover:bg-indigo-800"></button>
+                                    <img src="images/32.jpg" class="w-[18px] h-[18px] border rounded">
+                                </div>
+                                <div class="flex gap-2">
+                                    <button class="bg-slate-500 rounded text-white w-[18px] h-[18px] hover:bg-slate-800 text-xs">S</button>
+                                    <button disabled="true" class="bg-indigo-100 rounded w-[18px] h-[18px text-xs">M</button>
+                                    <!--disabled="true" it means button will not be clicked -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border rounded-md">
+                        <div class="w-[250px] h-[250px]">
+                            <img src="images/22.jpg" alt="">
+                        </div>
+                        <div class="border"></div>
+                        <div class="p-3 space-y-2">
+                            <div class="flex justify-between">
+                                <label class="text-gray-500">T-Shirts</label>
+                                <div>
+                                    <i class="ri-star-line text-orange-600"></i>
+                                    <i class="ri-star-line text-rose-600"></i>
+                                    <i class="ri-star-line text-rose-600"></i>
+                                    <i class="ri-star-line text-rose-600"></i>
+                                    <i class="ri-star-line text-rose-600"></i>
+                                </div>
+                            </div>
+                            <p class="text-md font-semibold">Black T-Shirts For Womens</p>
+                            <div class="flex gap-3 items-center">
+                                <label class="">$35.00</label>
+                                <label class="text-xs text-gray-500">$442.00</label>
+                            </div>
+                            <div class="flex justify-between">
+                                <div class="flex gap-2">
+                                    <button class="bg-slate-300 rounded w-[18px] h-[18px] hover:bg-slate-800"></button>
+                                    <button class="bg-indigo-300 rounded w-[18px] h-[18px] hover:bg-indigo-800"></button>
+                                    <img src="images/22.jpg" class="w-[18px] h-[18px] border rounded">
+                                </div>
+                                <div class="flex gap-2">
+                                    <button class="bg-slate-500 rounded text-white w-[18px] h-[18px] hover:bg-slate-800 text-xs">S</button>
+                                    <button disabled="true" class="bg-indigo-100 rounded w-[18px] h-[18px text-xs">M</button>
+                                    <!--disabled="true" it means button will not be clicked -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Section completely made by me -->
+                
+                <div class="my-24">
+                    <div class="swiper cat-swiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide bg-[#F7F7F8] flex flex-col items-center border rounded p-4 gap-y-1">
+                            <i class="ri-red-packet-line text-[43px] text-[#3F51B5]"></i>
+                            <h1 class="font-semibold text-xl">Product Packing</h1>
+                            <p class="text-gray-500 text-center">Lorem ipsum dolor, sit amet <br>consectetur adipisicing.</p>
+                          </div>
+                          <div class="swiper-slide flex flex-col items-center border rounded p-4 gap-y-1 bg-[#F7F7F8]">
+                            <i class="ri-truck-line text-[43px] text-[#3F51B5]"></i>
+                            <h1 class="font-semibold text-xl">Delivery in 5 days</h1>
+                            <p class="text-gray-500 text-center">Lorem ipsum dolor, sit amet <br>consectetur adipisicing.</p>
+                          </div>
+                          <div class="swiper-slide flex flex-col items-center border rounded p-4 gap-y-1 bg-[#F7F7F8]">
+                            <i class="ri-customer-service-2-line text-[43px] text-[#3F51B5]"></i>
+                            <h1 class="font-semibold text-xl">24 X 7 Support</h1>
+                            <p class="text-gray-500 text-center">Lorem ipsum dolor, sit amet <br>consectetur adipisicing.</p>
+                          </div>
+                          <div class="swiper-slide flex flex-col items-center border rounded p-4 gap-y-1 bg-[#F7F7F8]">
+                            <i class="ri-money-dollar-box-line text-[43px] text-[#3F51B5]"></i>
+                            <h1 class="font-semibold text-xl">Payment Secure</h1>
+                            <p class="text-gray-500 text-center">Lorem ipsum dolor, sit amet <br>consectetur adipisicing.</p>
+                          </div>
+                          <div class="swiper-slide bg-[#F7F7F8] flex flex-col items-center border rounded p-4 gap-y-1">
+                            <i class="ri-red-packet-line text-[43px] text-[#3F51B5]"></i>
+                            <h1 class="font-semibold text-xl">Product Packing</h1>
+                            <p class="text-gray-500 text-center">Lorem ipsum dolor, sit amet <br>consectetur adipisicing.</p>
+                          </div>
+                          <div class="swiper-slide flex flex-col items-center border rounded p-4 gap-y-1 bg-[#F7F7F8]">
+                            <i class="ri-truck-line text-[43px] text-[#3F51B5]"></i>
+                            <h1 class="font-semibold text-xl">Delivery in 5 days</h1>
+                            <p class="text-gray-500 text-center">Lorem ipsum dolor, sit amet <br>consectetur adipisicing.</p>
+                          </div>
+                          <div class="swiper-slide flex flex-col items-center border rounded p-4 gap-y-1 bg-[#F7F7F8]">
+                            <i class="ri-customer-service-2-line text-[43px] text-[#3F51B5]"></i>
+                            <h1 class="font-semibold text-xl">24 X 7 Support</h1>
+                            <p class="text-gray-500 text-center">Lorem ipsum dolor, sit amet <br>consectetur adipisicing.</p>
+                          </div>
+                          <div class="swiper-slide flex flex-col items-center border rounded p-4 gap-y-1 bg-[#F7F7F8]">
+                            <i class="ri-money-dollar-box-line text-[43px] text-[#3F51B5]"></i>
+                            <h1 class="font-semibold text-xl">Payment Secure</h1>
+                            <p class="text-gray-500 text-center">Lorem ipsum dolor, sit amet <br>consectetur adipisicing.</p>
+                          </div>
+                        </div>
+                        <!-- It is of no use -->
+                        <!-- <div class="swiper-pagination"></div> -->
+                    </div>
+                </div>
+            </div>
+            <!-- great deals -->
+            <div class="great-deals mb-24 flex items-center px-24 bg-cover">
+                <div class="bg-white rounded-md shadow-lg w-[500px] p-12 space-y-3">
+                    <div class="text-4xl">
+                        <label class="text-indigo-600">40%</label>
+                        <label>OFF</label>
+                    </div>
+                    <h1 class="font-bold text-2xl">Great deal on Womens Fashion.</h1>
+                    <p class="text-gray-500 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do maecenas accumsan lacus vel facilisis.</p>
+                    <div class="flex gap-8">
+                        <div >
+                            <h1 class="font-bold text-3xl" id="hour">00</h1>
+                            <label class="text-lg text-gray-500">hr</label>
+                        </div>
+                        <div>
+                            <h1 class="font-bold text-3xl" id="min">00</h1>
+                            <label class="text-lg text-gray-500">min</label>
+                        </div>
+                        <div>
+                            <h1 class="font-bold text-3xl" id="sec">00</h1>
+                            <label class="text-lg text-gray-500">sec</label>
+                        </div>
+                    </div>  
+                </div>
+                  
+            </div>
+            <!-- Product Feature -->
+            <div class="m-24">
+                <div class="swiper feature-slider">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide flex flex-col gap-4 px-6 item-center justify-center bg-[url('./images/4.jpg')] h-[250px] bg-cover rounded-xl">
+                        <h1 class="font-bold text-2xl">Children <br> Latest Fashion</h1>
+                        <div>
+                            <label class="font-bold text-indigo-600">15%</label>
+                            <label for="Off on first order">Off</label>
+                        </div>
+                        <button class="bg-indigo-600 px-6 py-2.5 rounded-md text-white font-semibold w-fit">Shop Now</button>
+                      </div> 
+                      <div class="swiper-slide flex flex-col gap-4 px-6 item-center justify-center bg-[url('./images/5.jpg')] h-[250px] bg-cover rounded-xl">
+                        <h1 class="font-bold text-2xl">Children <br> Latest Fashion</h1>
+                        <div>
+                            <label class="font-bold text-indigo-600">15%</label>
+                            <label for="Off on first order">Off</label>
+                        </div>
+                        <button class="bg-indigo-600 px-6 py-2.5 rounded-md text-white font-semibold w-fit">Shop Now</button>
+                      </div>
+                      <div class="swiper-slide flex flex-col gap-4 px-6 item-center justify-center bg-[url('./images/6.jpg')] h-[250px] bg-cover rounded-xl">
+                        <h1 class="font-bold text-2xl">Children <br> Latest Fashion</h1>
+                        <div>
+                            <label class="font-bold text-indigo-600">15%</label>
+                            <label for="Off on first order">Off</label>
+                        </div>
+                        <button class="bg-indigo-600 px-6 py-2.5 rounded-md text-white font-semibold w-fit">Shop Now</button>
+                      </div>
+                      <div class="swiper-slide flex flex-col gap-4 px-6 item-center justify-center bg-[url('./images/4.jpg')] h-[250px] bg-cover rounded-xl">
+                        <h1 class="font-bold text-2xl">Children <br> Latest Fashion</h1>
+                        <div>
+                            <label class="font-bold text-indigo-600">15%</label>
+                            <label for="Off on first order">Off</label>
+                        </div>
+                        <button class="bg-indigo-600 px-6 py-2.5 rounded-md text-white font-semibold w-fit">Shop Now</button>
+                      </div> 
+                      <div class="swiper-slide flex flex-col gap-4 px-6 item-center justify-center bg-[url('./images/5.jpg')] h-[250px] bg-cover rounded-xl">
+                        <h1 class="font-bold text-2xl">Children <br> Latest Fashion</h1>
+                        <div>
+                            <label class="font-bold text-indigo-600">15%</label>
+                            <label for="Off on first order">Off</label>
+                        </div>
+                        <button class="bg-indigo-600 px-6 py-2.5 rounded-md text-white font-semibold w-fit">Shop Now</button>
+                      </div>
+                      <div class="swiper-slide flex flex-col gap-4 px-6 item-center justify-center bg-[url('./images/6.jpg')] h-[250px] bg-cover rounded-xl">
+                        <h1 class="font-bold text-2xl">Children <br> Latest Fashion</h1>
+                        <div>
+                            <label class="font-bold text-indigo-600">15%</label>
+                            <label for="Off on first order">Off</label>
+                        </div>
+                        <button class="bg-indigo-600 px-6 py-2.5 rounded-md text-white font-semibold w-fit">Shop Now</button>
+                      </div>
+                    </div>
+                    
+                    
+                  </div>
+            </div>
+            <!-- Top Collection -->
+            <div class="m-24">
+                <h1 class="text-xl font-bold">Top Collection</h1>
+                <p class="text-gray-600 mb-6 mt-1">Shop online for top collection and get free shipping!</p>
+                <div class="grid grid-cols-5 gap-6 mb-8">
+                    <div class="border rounded-md">
+                        <div class="w-[250px] h-[250px] relative">
+                            <img src="images/naFront.jpg" alt="">
+                            <div class="bg-[#64B496] px-2 py-1 text-white text-xs absolute top-0 ">50% Sale</div>
+                        </div>
+                        <div class="border"></div>
+                        <div class="p-3 space-y-2">
+                            <div class="flex justify-between">
+                                <label class="text-gray-500">Women Tops</label>
+                                <div>
+                                    <i class="ri-star-line text-orange-600"></i>
+                                    <i class="ri-star-line text-rose-600"></i>
+                                    <i class="ri-star-line text-rose-600"></i>
+                                    <i class="ri-star-line text-rose-600"></i>
+                                    <i class="ri-star-line text-rose-600"></i>
+                                </div>
+                            </div>
+                            <p class="text-md font-semibold">Colorfull Top For Womens</p>
+                            <div class="flex gap-3 items-center">
+                                <label class="">$35.00</label>
+                                <del class="text-xs text-gray-500">$42.00</del>
+                            </div>
+                            <div class="flex justify-between">
+                                <div class="flex gap-2">
+                                    <button class="bg-slate-300 rounded w-[18px] h-[18px] hover:bg-slate-800"></button>
+                                    <button class="bg-indigo-300 rounded w-[18px] h-[18px] hover:bg-indigo-800"></button>
+                                    <img src="images/naFront.jpg" class="w-[18px] h-[18px] border rounded">
+                                </div>
+                                <div class="flex gap-2">
+                                    <button class="bg-slate-500 rounded text-white w-[18px] h-[18px] hover:bg-slate-800 text-xs">S</button>
+                                    <button disabled="true" class="bg-indigo-100 rounded w-[18px] h-[18px text-xs">M</button>
+                                    <!--disabled="true" it means button will not be clicked -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border rounded-md">
+                        <div class="w-[250px] h-[250px] relative">
+                            <img src="images/30.jpg" alt="">
+                            <div class="bg-[#7D76FF] px-2 py-1 text-white text-xs absolute top-0 ">Trending</div>
+                        </div>
+                        <div class="border"></div>
+                        <div class="p-3 space-y-2">
+                            <div class="flex justify-between">
+                                <label class="text-gray-500">Men T-shirt</label>
+                                <div>
+                                    <i class="ri-star-line text-orange-600"></i>
+                                    <i class="ri-star-line text-rose-600"></i>
+                                    <i class="ri-star-line text-rose-600"></i>
+                                    <i class="ri-star-line text-rose-600"></i>
+                                    <i class="ri-star-line text-rose-600"></i>
+                                </div>
+                            </div>
+                            <p class="text-md font-semibold">Blue T-Shirt for Men</p>
+                            <div class="flex gap-3 items-center">
+                                <label class="">$11.00</label>
+                                <del class="text-xs text-gray-500">$22.00</del>
+                            </div>
+                            <div class="flex justify-between">
+                                <div class="flex gap-2">
+                                    <button class="bg-slate-300 rounded w-[18px] h-[18px] hover:bg-slate-800"></button>
+                                    <button class="bg-indigo-300 rounded w-[18px] h-[18px] hover:bg-indigo-800"></button>
+                                    <img src="images/30.jpg" class="w-[18px] h-[18px] border rounded">
+                                </div>
+                                <div class="flex gap-2">
+                                    <button class="bg-slate-500 rounded text-white w-[18px] h-[18px] hover:bg-slate-800 text-xs">S</button>
+                                    <button disabled="true" class="bg-indigo-100 rounded w-[18px] h-[18px text-xs">M</button>
+                                    <!--disabled="true" it means button will not be clicked -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border rounded-md">
+                        <div class="w-[250px] h-[250px]">
+                            <img src="images/24.jpg" alt="">
+                        </div>
+                        <div class="border"></div>
+                        <div class="p-3 space-y-2">
+                            <div class="flex justify-between">
+                                <label class="text-gray-500">Kids</label>
+                                <div>
+                                    <i class="ri-star-line text-orange-600"></i>
+                                    <i class="ri-star-line text-rose-600"></i>
+                                    <i class="ri-star-line text-rose-600"></i>
+                                    <i class="ri-star-line text-rose-600"></i>
+                                    <i class="ri-star-line text-rose-600"></i>
+                                </div>
+                            </div>
+                            <p class="text-md font-semibold">Pink T-Shirts for Girl</p>
+                            <div class="flex gap-3 items-center">
+                                <label class="">$29.00</label>
+                                <del class="text-xs text-gray-500">$39.00</del>
+                            </div>
+                            <div class="flex justify-between">
+                                <div class="flex gap-2">
+                                    <button class="bg-slate-300 rounded w-[18px] h-[18px] hover:bg-slate-800"></button>
+                                    <button class="bg-indigo-300 rounded w-[18px] h-[18px] hover:bg-indigo-800"></button>
+                                    <img src="images/24.jpg" class="w-[18px] h-[18px] border rounded">
+                                </div>
+                                <div class="flex gap-2">
+                                    <button class="bg-slate-500 rounded text-white w-[18px] h-[18px] hover:bg-slate-800 text-xs">S</button>
+                                    <button disabled="true" class="bg-indigo-100 rounded w-[18px] h-[18px text-xs">M</button>
+                                    <!--disabled="true" it means button will not be clicked -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border rounded-md">
+                        <div class="w-[250px] h-[250px] relative">
+                            <img src="images/32.jpg" alt="">
+                            <div class="bg-[#FF5B5B] px-2 py-1 text-white text-xs absolute top-0 ">New</div>
+                        </div>
+                        <div class="border"></div>
+                        <div class="p-3 space-y-2">
+                            <div class="flex justify-between">
+                                <label class="text-gray-500">Shorts</label>
+                                <div>
+                                    <i class="ri-star-line text-orange-600"></i>
+                                    <i class="ri-star-line text-rose-600"></i>
+                                    <i class="ri-star-line text-rose-600"></i>
+                                    <i class="ri-star-line text-rose-600"></i>
+                                    <i class="ri-star-line text-rose-600"></i>
+                                </div>
+                            </div>
+                            <p class="text-md font-semibold">Girls Nightdress Shorts</p>
+                            <div class="flex gap-3 items-center">
+                                <label class="">$57.00</label>
+                                <del class="text-xs text-gray-500">$62.00</del>
+                            </div>
+                            <div class="flex justify-between">
+                                <div class="flex gap-2">
+                                    <button class="bg-slate-300 rounded w-[18px] h-[18px] hover:bg-slate-800"></button>
+                                    <button class="bg-indigo-300 rounded w-[18px] h-[18px] hover:bg-indigo-800"></button>
+                                    <img src="images/32.jpg" class="w-[18px] h-[18px] border rounded">
+                                </div>
+                                <div class="flex gap-2">
+                                    <button class="bg-slate-500 rounded text-white w-[18px] h-[18px] hover:bg-slate-800 text-xs">S</button>
+                                    <button disabled="true" class="bg-indigo-100 rounded w-[18px] h-[18px text-xs">M</button>
+                                    <!--disabled="true" it means button will not be clicked -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border rounded-md">
+                        <div class="w-[250px] h-[250px]">
+                            <img src="images/22.jpg" alt="">
+                        </div>
+                        <div class="border"></div>
+                        <div class="p-3 space-y-2">
+                            <div class="flex justify-between">
+                                <label class="text-gray-500">T-Shirts</label>
+                                <div>
+                                    <i class="ri-star-line text-orange-600"></i>
+                                    <i class="ri-star-line text-rose-600"></i>
+                                    <i class="ri-star-line text-rose-600"></i>
+                                    <i class="ri-star-line text-rose-600"></i>
+                                    <i class="ri-star-line text-rose-600"></i>
+                                </div>
+                            </div>
+                            <p class="text-md font-semibold">Black T-Shirts For Womens</p>
+                            <div class="flex gap-3 items-center">
+                                <label class="">$35.00</label>
+                                <label class="text-xs text-gray-500">$442.00</label>
+                            </div>
+                            <div class="flex justify-between">
+                                <div class="flex gap-2">
+                                    <button class="bg-slate-300 rounded w-[18px] h-[18px] hover:bg-slate-800"></button>
+                                    <button class="bg-indigo-300 rounded w-[18px] h-[18px] hover:bg-indigo-800"></button>
+                                    <img src="images/22.jpg" class="w-[18px] h-[18px] border rounded">
+                                </div>
+                                <div class="flex gap-2">
+                                    <button class="bg-slate-500 rounded text-white w-[18px] h-[18px] hover:bg-slate-800 text-xs">S</button>
+                                    <button disabled="true" class="bg-indigo-100 rounded w-[18px] h-[18px text-xs">M</button>
+                                    <!--disabled="true" it means button will not be clicked -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-5 gap-6">
+                    <div class="border rounded-md">
+                        <div class="w-[250px] h-[250px] relative">
+                            <img src="images/naFront.jpg" alt="">
+                            <div class="bg-[#64B496] px-2 py-1 text-white text-xs absolute top-0 ">50% Sale</div>
+                        </div>
+                        <div class="border"></div>
+                        <div class="p-3 space-y-2">
+                            <div class="flex justify-between">
+                                <label class="text-gray-500">Women Tops</label>
+                                <div>
+                                    <i class="ri-star-line text-orange-600"></i>
+                                    <i class="ri-star-line text-rose-600"></i>
+                                    <i class="ri-star-line text-rose-600"></i>
+                                    <i class="ri-star-line text-rose-600"></i>
+                                    <i class="ri-star-line text-rose-600"></i>
+                                </div>
+                            </div>
+                            <p class="text-md font-semibold">Colorfull Top For Womens</p>
+                            <div class="flex gap-3 items-center">
+                                <label class="">$35.00</label>
+                                <del class="text-xs text-gray-500">$42.00</del>
+                            </div>
+                            <div class="flex justify-between">
+                                <div class="flex gap-2">
+                                    <button class="bg-slate-300 rounded w-[18px] h-[18px] hover:bg-slate-800"></button>
+                                    <button class="bg-indigo-300 rounded w-[18px] h-[18px] hover:bg-indigo-800"></button>
+                                    <img src="images/naFront.jpg" class="w-[18px] h-[18px] border rounded">
+                                </div>
+                                <div class="flex gap-2">
+                                    <button class="bg-slate-500 rounded text-white w-[18px] h-[18px] hover:bg-slate-800 text-xs">S</button>
+                                    <button disabled="true" class="bg-indigo-100 rounded w-[18px] h-[18px text-xs">M</button>
+                                    <!--disabled="true" it means button will not be clicked -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border rounded-md">
+                        <div class="w-[250px] h-[250px] relative">
+                            <img src="images/30.jpg" alt="">
+                            <div class="bg-[#7D76FF] px-2 py-1 text-white text-xs absolute top-0 ">Trending</div>
+                        </div>
+                        <div class="border"></div>
+                        <div class="p-3 space-y-2">
+                            <div class="flex justify-between">
+                                <label class="text-gray-500">Men T-shirt</label>
+                                <div>
+                                    <i class="ri-star-line text-orange-600"></i>
+                                    <i class="ri-star-line text-rose-600"></i>
+                                    <i class="ri-star-line text-rose-600"></i>
+                                    <i class="ri-star-line text-rose-600"></i>
+                                    <i class="ri-star-line text-rose-600"></i>
+                                </div>
+                            </div>
+                            <p class="text-md font-semibold">Blue T-Shirt for Men</p>
+                            <div class="flex gap-3 items-center">
+                                <label class="">$11.00</label>
+                                <del class="text-xs text-gray-500">$22.00</del>
+                            </div>
+                            <div class="flex justify-between">
+                                <div class="flex gap-2">
+                                    <button class="bg-slate-300 rounded w-[18px] h-[18px] hover:bg-slate-800"></button>
+                                    <button class="bg-indigo-300 rounded w-[18px] h-[18px] hover:bg-indigo-800"></button>
+                                    <img src="images/30.jpg" class="w-[18px] h-[18px] border rounded">
+                                </div>
+                                <div class="flex gap-2">
+                                    <button class="bg-slate-500 rounded text-white w-[18px] h-[18px] hover:bg-slate-800 text-xs">S</button>
+                                    <button disabled="true" class="bg-indigo-100 rounded w-[18px] h-[18px text-xs">M</button>
+                                    <!--disabled="true" it means button will not be clicked -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border rounded-md">
+                        <div class="w-[250px] h-[250px]">
+                            <img src="images/24.jpg" alt="">
+                        </div>
+                        <div class="border"></div>
+                        <div class="p-3 space-y-2">
+                            <div class="flex justify-between">
+                                <label class="text-gray-500">Kids</label>
+                                <div>
+                                    <i class="ri-star-line text-orange-600"></i>
+                                    <i class="ri-star-line text-rose-600"></i>
+                                    <i class="ri-star-line text-rose-600"></i>
+                                    <i class="ri-star-line text-rose-600"></i>
+                                    <i class="ri-star-line text-rose-600"></i>
+                                </div>
+                            </div>
+                            <p class="text-md font-semibold">Pink T-Shirts for Girl</p>
+                            <div class="flex gap-3 items-center">
+                                <label class="">$29.00</label>
+                                <del class="text-xs text-gray-500">$39.00</del>
+                            </div>
+                            <div class="flex justify-between">
+                                <div class="flex gap-2">
+                                    <button class="bg-slate-300 rounded w-[18px] h-[18px] hover:bg-slate-800"></button>
+                                    <button class="bg-indigo-300 rounded w-[18px] h-[18px] hover:bg-indigo-800"></button>
+                                    <img src="images/24.jpg" class="w-[18px] h-[18px] border rounded">
+                                </div>
+                                <div class="flex gap-2">
+                                    <button class="bg-slate-500 rounded text-white w-[18px] h-[18px] hover:bg-slate-800 text-xs">S</button>
+                                    <button disabled="true" class="bg-indigo-100 rounded w-[18px] h-[18px text-xs">M</button>
+                                    <!--disabled="true" it means button will not be clicked -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border rounded-md">
+                        <div class="w-[250px] h-[250px] relative">
+                            <img src="images/32.jpg" alt="">
+                            <div class="bg-[#FF5B5B] px-2 py-1 text-white text-xs absolute top-0 ">New</div>
+                        </div>
+                        <div class="border"></div>
+                        <div class="p-3 space-y-2">
+                            <div class="flex justify-between">
+                                <label class="text-gray-500">Shorts</label>
+                                <div>
+                                    <i class="ri-star-line text-orange-600"></i>
+                                    <i class="ri-star-line text-rose-600"></i>
+                                    <i class="ri-star-line text-rose-600"></i>
+                                    <i class="ri-star-line text-rose-600"></i>
+                                    <i class="ri-star-line text-rose-600"></i>
+                                </div>
+                            </div>
+                            <p class="text-md font-semibold">Girls Nightdress Shorts</p>
+                            <div class="flex gap-3 items-center">
+                                <label class="">$57.00</label>
+                                <del class="text-xs text-gray-500">$62.00</del>
+                            </div>
+                            <div class="flex justify-between">
+                                <div class="flex gap-2">
+                                    <button class="bg-slate-300 rounded w-[18px] h-[18px] hover:bg-slate-800"></button>
+                                    <button class="bg-indigo-300 rounded w-[18px] h-[18px] hover:bg-indigo-800"></button>
+                                    <img src="images/32.jpg" class="w-[18px] h-[18px] border rounded">
+                                </div>
+                                <div class="flex gap-2">
+                                    <button class="bg-slate-500 rounded text-white w-[18px] h-[18px] hover:bg-slate-800 text-xs">S</button>
+                                    <button disabled="true" class="bg-indigo-100 rounded w-[18px] h-[18px text-xs">M</button>
+                                    <!--disabled="true" it means button will not be clicked -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border rounded-md">
+                        <div class="w-[250px] h-[250px]">
+                            <img src="images/22.jpg" alt="">
+                        </div>
+                        <div class="border"></div>
+                        <div class="p-3 space-y-2">
+                            <div class="flex justify-between">
+                                <label class="text-gray-500">T-Shirts</label>
+                                <div>
+                                    <i class="ri-star-line text-orange-600"></i>
+                                    <i class="ri-star-line text-rose-600"></i>
+                                    <i class="ri-star-line text-rose-600"></i>
+                                    <i class="ri-star-line text-rose-600"></i>
+                                    <i class="ri-star-line text-rose-600"></i>
+                                </div>
+                            </div>
+                            <p class="text-md font-semibold">Black T-Shirts For Womens</p>
+                            <div class="flex gap-3 items-center">
+                                <label class="">$35.00</label>
+                                <label class="text-xs text-gray-500">$442.00</label>
+                            </div>
+                            <div class="flex justify-between">
+                                <div class="flex gap-2">
+                                    <button class="bg-slate-300 rounded w-[18px] h-[18px] hover:bg-slate-800"></button>
+                                    <button class="bg-indigo-300 rounded w-[18px] h-[18px] hover:bg-indigo-800"></button>
+                                    <img src="images/22.jpg" class="w-[18px] h-[18px] border rounded">
+                                </div>
+                                <div class="flex gap-2">
+                                    <button class="bg-slate-500 rounded text-white w-[18px] h-[18px] hover:bg-slate-800 text-xs">S</button>
+                                    <button disabled="true" class="bg-indigo-100 rounded w-[18px] h-[18px text-xs">M</button>
+                                    <!--disabled="true" it means button will not be clicked -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Latest News -->
+             <div class="m-24">
+                <div class="text-center space-y-4 mb-4">
+                    <h1 class="text-4xl text-black font-bold">Latest News</h1>
+                    <p class="text-gray-500">Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br> Facere impedit fugiat eius magni placeat!</p>
+                </div>
+                <div class="swiper latest-slider">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide border rounded-md">
+                        <div class="h-[250px] bg-[url('./images/l(1).jpg')] bg-cover">
+
+                        </div>
+                        <div class="p-4 space-y-2">
+                            <label class="text-gray-500">By Admin | Food</label>
+                            <h1>Best guide to Shooping for organic ingredients.</h1>
+                            <button class="text-indigo-600 font-semibold">
+                                Read more
+                                <i class="ri-arrow-right-line"></i>
+                            </button>
+                        </div>
+                      </div>
+                      <div class="swiper-slide border rounded-md">
+                        <div class="h-[250px] bg-[url('./images/l(3).jpg')] bg-cover">
+
+                        </div>
+                        <div class="p-4 space-y-2">
+                            <label class="text-gray-500">By Admin | Food</label>
+                            <h1>Best guide to Shooping for organic ingredients.</h1>
+                            <button class="text-indigo-600 font-semibold">
+                                Read more
+                                <i class="ri-arrow-right-line"></i>
+                            </button>
+                        </div>
+                      </div>
+                      <div class="swiper-slide border rounded-md">
+                        <div class="h-[250px] bg-[url('./images/l(2).jpg')] bg-cover">
+
+                        </div>
+                        <div class="p-4 space-y-2">
+                            <label class="text-gray-500">By Admin | Food</label>
+                            <h1>Best guide to Shooping for organic ingredients.</h1>
+                            <button class="text-indigo-600 font-semibold">
+                                Read more
+                                <i class="ri-arrow-right-line"></i>
+                            </button>
+                        </div>
+                      </div>
+                      <div class="swiper-slide border rounded-md">
+                        <div class="h-[250px] bg-[url('./images/l(1).jpg')] bg-cover">
+
+                        </div>
+                        <div class="p-4 space-y-2">
+                            <label class="text-gray-500">By Admin | Food</label>
+                            <h1>Best guide to Shooping for organic ingredients.</h1>
+                            <button class="text-indigo-600 font-semibold">
+                                Read more
+                                <i class="ri-arrow-right-line"></i>
+                            </button>
+                        </div>
+                      </div>
+                      <div class="swiper-slide border rounded-md">
+                        <div class="h-[250px] bg-[url('./images/l(3).jpg')] bg-cover">
+
+                        </div>
+                        <div class="p-4 space-y-2">
+                            <label class="text-gray-500">By Admin | Food</label>
+                            <h1>Best guide to Shooping for organic ingredients.</h1>
+                            <button class="text-indigo-600 font-semibold">
+                                Read more
+                                <i class="ri-arrow-right-line"></i>
+                            </button>
+                        </div>
+                      </div>
+                      <div class="swiper-slide border rounded-md">
+                        <div class="h-[250px] bg-[url('./images/l(2).jpg')] bg-cover">
+
+                        </div>
+                        <div class="p-4 space-y-2">
+                            <label class="text-gray-500">By Admin | Food</label>
+                            <h1>Best guide to Shooping for organic ingredients.</h1>
+                            <button class="text-indigo-600 font-semibold">
+                                Read more
+                                <i class="ri-arrow-right-line"></i>
+                            </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+             </div>
+        </section>
+
+        <!--Footer-->
+        <footer class="bg-[#F7F7F8] px-24 py-16 flex flex-col">
+            <div class="flex gap-12">
+                <div class="space-y-5 w-[350px]">
+                    <div>
+                        <img src="images/logo.png" />
+                        <p class="text-zinc-600 mt-4">Carrot is the biggest market of grocery products. Get your daily
+                            needs from our store.</p>
+                    </div>
+                    <div class="flex gap-2 text-gray-500">
+                        <i class="ri-map-pin-line"></i>
+                        <address>51 Green St.Huntington ohaio beach ontario, NY 11746 KY 4783, USA.</address>
+                    </div>
+
+                    <div class="flex gap-2 text-gray-500">
+                        <i class="ri-mail-send-line"></i>
+                        <p>example@email.com</p>
+                    </div>
+
+                    <div class="flex gap-2 text-gray-500">
+                        <i class="ri-phone-line"></i>
+                        <p>+91 123 4567890</p>
+                    </div>
+                </div>
+
+                <div class="flex-1">
+                    <h4 class="font-semibold text-2xl">Company</h4>
+                    <ul class="mt-4 space-y-3">
+                        <li><a href="#" class="text-md text-gray-500">About Us</a></li>
+                        <li><a href="#" class="text-md text-gray-500">Daily Information</a></li>
+                        <li><a href="#" class="text-md text-gray-500">Privacy Policy</a></li>
+                        <li><a href="#" class="text-md text-gray-500">Terms & Conditions</a></li>
+                        <li><a href="#" class="text-md text-gray-500">Contact Us</a></li>
+                        <li><a href="#" class="text-md text-gray-500">Support Center</a></li>
+                    </ul>
+                </div>
+
+                <div class="flex-1">
+                    <h4 class="font-semibold text-2xl">Category</h4>
+                    <ul class="mt-4 space-y-3">
+                        <li><a href="#" class="text-md text-gray-500">Fashion & Clothes</a></li>
+                        <li><a href="#" class="text-md text-gray-500">Dairy & Bakery</a></li>
+                        <li><a href="#" class="text-md text-gray-500">Fruits & Vegetable</a></li>
+                        <li><a href="#" class="text-md text-gray-500">Snack & Spice</a></li>
+                        <li><a href="#" class="text-md text-gray-500">Juice & Drinks</a></li>
+                        <li><a href="#" class="text-md text-gray-500">Fast Food</a></li>
+                    </ul>
+                </div>
+
+                <div class="space-y-4">
+                    <h4 class="font-semibold text-2xl">Newsletter</h4>
+
+                    <div>
+                        <p class="text-gray-500 mb-1">Subscribe to get in touch.</p>
+                        <form autocomplete="off" class="relative w-[350px]">
+                            <input name="email" type="email" required="true" class="border w-full p-2.5 rounded"
+                                placeholder="Email" />
+                            <button class="absolute top-0 right-2 p-2.5" type="submit">
+                                <i class="ri-send-plane-fill"></i>
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="flex gap-2 items-center">
+                        <a href="#" class="border bg-white block px-2.5 py-1.5 rounded">
+                            <i class="ri-facebook-line"></i>
+                        </a>
+
+                        <a href="#" class="border bg-white block px-2.5 py-1.5 rounded">
+                            <i class="ri-twitter-x-line"></i>
+                        </a>
+
+                        <a href="#" class="border bg-white block px-2.5 py-1.5 rounded">
+                            <i class="ri-linkedin-line"></i>
+                        </a>
+
+                        <a href="#" class="border bg-white block px-2.5 py-1.5 rounded">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                    </div>
+
+                    <div class="flex gap-3">
+                        <a href="#">
+                            <img src="images/android.png" class="rounded-md" width="150" />
+                        </a>
+                        <a href="#">
+                            <img src="images/apple.png" class="rounded-md" width="150" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="mt-8 mb-4" />
+
+            <div class="flex items-center justify-between">
+                <p>© 2024 Carrot, All rights reserved.</p>
+                <div>
+                    <img src="images/payment.png" />
+                </div>
+            </div>
+        </footer>
+        <!-- Cart -->
+        <div class="w-full h-full bg-black bg-opacity-80 fixed top-0 left-0 hidden" id="cart-overlay">
+            <div class="bg-white w-[400px] h-full absolute top-0 right-0 px-6 py-4" id="cart-list">
+                <div class="flex justify-between">
+                    <h1 class="text-lg font-semibold">My Cart</h1>
+                    <button class="text-rose-600 font-bold text-xl" id="close-cart">
+                        <i class="ri-close-circle-line"></i>
+                    </button>
+                </div>
+                <hr class="my-4">
+                <ul class="space-y-6">
+                    <li>
+                        <div class="flex gap-4 border-b pb-6">
+                            <img src="images/pomegranate.jpeg" alt="" class="w-[80px]">
+                            <div>
+                                <p class="text-gray-500">Fresh pomegranate</p>
+                                <div>
+                                    <label for="" class="font-bold text-slate-500">$56.0</label>
+                                    <label for="">x 1kg</label>
+                                </div>
+                                <div class="border flex items-center w-[80px] rounded p-[2px] justify-around mt-1">
+                                    <button class="text-lg increase-qnt">+</button>
+                                    <label class="qnt">1</label>
+                                    <button class="text-lg decrease-qnt">-</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex gap-4 border-b pb-6">
+                            <img src="images/lemon.jpeg" alt="" class="w-[80px]">
+                            <div>
+                                <p class="text-gray-500">Fresh pomegranate</p>
+                                <div>
+                                    <label for="" class="font-bold text-slate-500">$56.0</label>
+                                    <label for="">x 1kg</label>
+                                </div>
+                                <div class="border flex items-center w-[80px] rounded p-[2px] justify-around mt-1">
+                                    <button class="text-lg increase-qnt">+</button>
+                                    <label class="qnt">1</label>
+                                    <button class="text-lg decrease-qnt">-</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex gap-4 border-b pb-6">
+                            <img src="images/juice.jpeg" alt="" class="w-[80px]">
+                            <div>
+                                <p class="text-gray-500">Fresh pomegranate</p>
+                                <div>
+                                    <label for="" class="font-bold text-slate-500">$56.0</label>
+                                    <label for="">x 1kg</label>
+                                </div>
+                                <div class="border flex items-center w-[80px] rounded p-[2px] justify-around mt-1">
+                                    <button class="text-lg increase-qnt">+</button>
+                                    <label class="qnt">1</label>
+                                    <button class="text-lg decrease-qnt">-</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="space-y-6">
+                            <div class="flex justify-between">
+                                <label class="text-slate-800">Sub-Total</label>
+                                <label class="font-bold">$300.00</label>
+                            </div>
+                            <div class="flex justify-between">
+                                <label class="text-slate-800">VAT (20%)</label>
+                                <label class="font-bold">$60.00</label>
+                            </div>
+                            <div class="flex justify-between">
+                                <label class="text-slate-800">Total</label>
+                                <label class="font-bold">$360.00</label>
+                            </div>
+                            <div class="flex justify-between">
+                                <button
+                                    class="font-bold px-6 py-2.5 bg-[#64b496] rounded text-white hover:bg-black">View
+                                    Cart</button>
+                                <button
+                                    class="font-bold px-6 py-2.5 rounded text-[#64b496] border-2 border-[#64b496]">Checkout</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+        //dusre wale code ka swiper slider h ye aur pagination wala code ka koi kaam nhi h isliye remove kr diya
+        var swiper = new Swiper(".cat-swiper", {
+            slidesPerView: 4,
+            spaceBetween: 30, 
+        });
+        //tesre wale code ka swiper slider h ye aur pagination wala code ka koi kaam nhi h isliye remove kr diya
+        var swiper = new Swiper(".feature-slider", {
+            slidesPerView: 3,
+            spaceBetween: 30, 
+        });
+        var swiper = new Swiper(".latest-slider", {
+            slidesPerView: 3,
+            spaceBetween: 30, 
+        });
+    </script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+@keyframes cartlist {
+    from{
+        right: -400px;
+    }
+    to{
+       right: 0; 
+    }
+}
+@keyframes close {
+    from{
+        right: 0px;
+    }
+    to{
+       right: -400px; 
+    }
+}

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style/index.css" />
+</head>
+<body>
+    <div>
+        <!--Top navbar code-->
+        <nav class="flex justify-around items-center py-4">
+            <img src="images/logo.png" alt="logo" />
+            <form class="flex border-2 border-indigo-600 w-5/12 rounded">
+                <input name="keyword" class="flex-1 px-2 rounded" placeholder="Search this site" />
+                <select class="py-2 px-4 border-l-2 border-indigo-600">
+                    <option>All Categories</option>
+                    <option value="mens">Men`s</option>
+                    <option value="womens">Women`s</option>
+                    <option value="electronics">Electronics</option>
+                </select>
+                <button class="bg-indigo-600 py-2 px-4 text-white">
+                    <i class="ri-search-2-line"></i>
+                </button>
+            </form>
+            <div class="flex gap-6">
+                <button class="text-lg relative" id="account">
+                    <i class="ri-user-line"></i>
+                    Account
+                    <div class=" rounded bg-white border absolute top-10 right-0  w-[150px] flex flex-col" id="account-menu">
+                        <a href="register.html" class="text-sm w-full hover:bg-gray-100 text-left px-3 py-2">Register</a>
+                        <a href="checkout.html" class="text-sm w-full hover:bg-gray-100 text-left px-3 py-2">Checkout</a>
+                        <a href="login.html" class="text-sm w-full hover:bg-gray-100 text-left px-3 py-2">Login</a>
+                    </div>
+                </button>
+
+                <a href="wishlist.html">
+                    <button class="text-lg">
+                        <i class="ri-heart-line"></i>
+                        Wishlist
+                    </button>
+                </a>
+
+                <button class="text-lg" id="cart">
+                    <i class="ri-shopping-cart-line"></i>
+                    Cart
+                </button>
+            </div>
+        </nav>
+
+        <!--Main navbar code-->
+        <nav class="flex justify-around items-center py-4">
+            <button class="border text-xl w-12 h-12">
+                <i class="ri-menu-2-fill"></i>
+            </button>
+            <ul class="flex gap-12">
+                <li><a href="#" class="text-md font-semibold">Home</a></li>
+                <li><a href="#" class="text-md font-semibold">Category</a></li>
+                <li><a href="#" class="text-md font-semibold">Products</a></li>
+                <li><a href="#" class="text-md font-semibold">Blog</a></li>
+                <li><a href="#" class="text-md font-semibold">Contact</a></li>
+            </ul>
+            <select class="border py-2 px-16">
+                <option>Chicago</option>
+                <option>America</option>
+                <option>Nepal</option>
+                <option>India</option>
+                <option>Australia</option>
+            </select>
+        </nav>
+
+        <!-- Page Title -->
+        <div class="bg-[#E4F2ED] flex justify-between px-32 py-4 items-center">
+            <h1 class="font-semibold">Register</h1>
+            <p class="font-semibold">Home - Register</p>
+        </div>
+        <!--Section register form-->
+        <div class="border p-8 bg-white rounded-md w-6/12 my-16 mx-auto">
+            <img src="images/logo.png" alt="" class="mx-auto mb-8">
+            <form action="#" class="grid grid-cols-2 gap-x-8 gap-y-4">
+                <div class="flex flex-col">
+                    <label class="font-semibold mb-2 text-zinc-600">Firstname</label>
+                    <input class="border p-2 rounded" name="firstname" required="true" type="text" placeholder="Enter firstname">
+                </div>
+                <div class="flex flex-col">
+                    <label class="font-semibold mb-2 text-zinc-600">Lastname</label>
+                    <input class="border p-2 rounded" name="lastname" required="true" type="text" placeholder="Enter lastname">
+                </div>
+                <div class="flex flex-col">
+                    <label class="font-semibold mb-2 text-zinc-600">Email</label>
+                    <input class="border p-2 rounded" name="email" required="true" type="email" placeholder="Enter email">
+                </div>
+                <div class="flex flex-col">
+                    <label class="font-semibold mb-2 text-zinc-600">Phone Number</label>
+                    <input class="border p-2 rounded" name="phone" required="true" type="number" placeholder="Enter phone number">
+                </div>
+                <div class="flex flex-col col-span-2">
+                    <label class="font-semibold mb-2 text-zinc-600">Address</label>
+                    <input class="border p-2 rounded" name="address" required="true" type="text" placeholder="Enter address">
+                </div>
+                <div class="flex flex-col">
+                    <label class="font-semibold mb-2 text-zinc-600">City</label>
+                    <input class="border p-2 rounded" name="city" required="true" type="text" placeholder="Enter city">
+                </div>
+                <div class="flex flex-col">
+                    <label class="font-semibold mb-2 text-zinc-600">Pincode</label>
+                    <input class="border p-2 rounded" name="pincode" required="true" type="number" placeholder="Enter pincode">
+                </div>
+                <div class="flex flex-col">
+                    <label class="font-semibold mb-2 text-zinc-600">Country</label>
+                    <input class="border p-2 rounded" name="country" required="true" type="text" placeholder="Enter country">
+                </div>
+                <div class="flex flex-col">
+                    <label class="font-semibold mb-2 text-zinc-600">State</label>
+                    <input class="border p-2 rounded" name="state" required="true" type="text" placeholder="Enter State">
+                </div>
+                <div class="flex justify-between items-center col-span-2">
+                    <button class="border rounded bg-[#64b496] text-white w-fit px-6 py-2.5 mt-2 font-semibold hover:bg-black">Signup</button>
+                    <a href="login.html" class="text-gray-600 font-semibold">Have an account ?</a>  
+                    <!-- have an account ? is used to go at login page -->
+                </div>
+                
+            </form>
+        </div>
+
+        <!--Footer-->
+        <footer class="bg-[#F7F7F8] px-24 py-16 flex flex-col">
+            <div class="flex gap-12">
+                <div class="space-y-5 w-[350px]">
+                    <div>
+                        <img src="images/logo.png" />
+                        <p class="text-zinc-600 mt-4">Carrot is the biggest market of grocery products. Get your daily needs from our store.</p>
+                    </div>
+                    <div class="flex gap-2 text-gray-500">
+                        <i class="ri-map-pin-line"></i>
+                        <address>51 Green St.Huntington ohaio beach ontario, NY 11746 KY 4783, USA.</address>
+                    </div>
+
+                    <div class="flex gap-2 text-gray-500">
+                        <i class="ri-mail-send-line"></i>
+                        <p>example@email.com</p>
+                    </div>
+
+                    <div class="flex gap-2 text-gray-500">
+                        <i class="ri-phone-line"></i>
+                        <p>+91 123 4567890</p>
+                    </div>
+                </div>
+
+                <div class="flex-1">
+                    <h4 class="font-semibold text-2xl">Company</h4>
+                    <ul class="mt-4 space-y-3">
+                        <li><a href="#" class="text-md text-gray-500">About Us</a></li>
+                        <li><a href="#" class="text-md text-gray-500">Daily Information</a></li>
+                        <li><a href="#" class="text-md text-gray-500">Privacy Policy</a></li>
+                        <li><a href="#" class="text-md text-gray-500">Terms & Conditions</a></li>
+                        <li><a href="#" class="text-md text-gray-500">Contact Us</a></li>
+                        <li><a href="#" class="text-md text-gray-500">Support Center</a></li>
+                    </ul>
+                </div>
+
+                <div class="flex-1">
+                    <h4 class="font-semibold text-2xl">Category</h4>
+                    <ul class="mt-4 space-y-3">
+                        <li><a href="#" class="text-md text-gray-500">Fashion & Clothes</a></li>
+                        <li><a href="#" class="text-md text-gray-500">Dairy & Bakery</a></li>
+                        <li><a href="#" class="text-md text-gray-500">Fruits & Vegetable</a></li>
+                        <li><a href="#" class="text-md text-gray-500">Snack & Spice</a></li>
+                        <li><a href="#" class="text-md text-gray-500">Juice & Drinks</a></li>
+                        <li><a href="#" class="text-md text-gray-500">Fast Food</a></li>
+                    </ul>
+                </div>
+
+                <div class="space-y-4">
+                    <h4 class="font-semibold text-2xl">Newsletter</h4>
+
+                    <div>
+                        <p class="text-gray-500 mb-1">Subscribe to get in touch.</p>
+                        <form autocomplete="off" class="relative w-[350px]">
+                            <input name="email" type="email" required="true" class="border w-full p-2.5 rounded" placeholder="Email" />
+                            <button class="absolute top-0 right-2 p-2.5" type="submit">
+                                <i class="ri-send-plane-fill"></i>
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="flex gap-2 items-center">
+                        <a href="#" class="border bg-white block px-2.5 py-1.5 rounded">
+                            <i class="ri-facebook-line"></i>
+                        </a>
+
+                        <a href="#" class="border bg-white block px-2.5 py-1.5 rounded">
+                            <i class="ri-twitter-x-line"></i>
+                        </a>
+
+                        <a href="#" class="border bg-white block px-2.5 py-1.5 rounded">
+                            <i class="ri-linkedin-line"></i>
+                        </a>
+
+                        <a href="#" class="border bg-white block px-2.5 py-1.5 rounded">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                    </div>
+
+                    <div class="flex gap-3">
+                        <a href="#">
+                            <img src="images/android.png" class="rounded-md" width="150" />
+                        </a>
+                        <a href="#">
+                            <img src="images/apple.png" class="rounded-md" width="150" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="mt-8 mb-4" />
+
+            <div class="flex items-center justify-between">
+                <p>© 2024 Carrot, All rights reserved.</p>
+                <div>
+                    <img src="images/payment.png" />
+                </div>
+            </div>
+        </footer>
+        <!-- Cart -->
+    <div class="w-full h-full bg-black bg-opacity-80 fixed top-0 left-0 hidden" id="cart-overlay">
+        <div class="bg-white w-[400px] h-full absolute top-0 right-0 px-6 py-4" id="cart-list">
+            <div class="flex justify-between">
+                <h1 class="text-lg font-semibold">My Cart</h1>
+                <button class="text-rose-600 font-bold text-xl" id="close-cart">
+                    <i class="ri-close-circle-line"></i>
+                </button>
+            </div>
+            <hr class="my-4">
+            <ul class="space-y-6">
+                <li>
+                    <div class="flex gap-4 border-b pb-6">
+                        <img src="images/pomegranate.jpeg" alt="" class="w-[80px]">
+                        <div>
+                            <p class="text-gray-500">Fresh pomegranate</p>
+                            <div>
+                                <label for=""class="font-bold text-slate-500">$56.0</label>
+                                <label for="">x 1kg</label>
+                            </div>
+                            <div class="border flex items-center w-[80px] rounded p-[2px] justify-around mt-1">
+                                <button class="text-lg increase-qnt">+</button>
+                                <label class="qnt">1</label>
+                                <button class="text-lg decrease-qnt">-</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex gap-4 border-b pb-6">
+                        <img src="images/lemon.jpeg" alt="" class="w-[80px]">
+                        <div>
+                            <p class="text-gray-500">Fresh pomegranate</p>
+                            <div>
+                                <label for=""class="font-bold text-slate-500">$56.0</label>
+                                <label for="">x 1kg</label>
+                            </div>
+                            <div class="border flex items-center w-[80px] rounded p-[2px] justify-around mt-1">
+                                <button class="text-lg increase-qnt">+</button>
+                                <label class="qnt">1</label>
+                                <button class="text-lg decrease-qnt">-</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="flex gap-4 border-b pb-6">
+                        <img src="images/juice.jpeg" alt="" class="w-[80px]">
+                        <div>
+                            <p class="text-gray-500">Fresh pomegranate</p>
+                            <div>
+                                <label for=""class="font-bold text-slate-500">$56.0</label>
+                                <label for="">x 1kg</label>
+                            </div>
+                            <div class="border flex items-center w-[80px] rounded p-[2px] justify-around mt-1">
+                                <button class="text-lg increase-qnt">+</button>
+                                <label class="qnt">1</label>
+                                <button class="text-lg decrease-qnt">-</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="space-y-6">
+                        <div class="flex justify-between">
+                            <label class="text-slate-800">Sub-Total</label>
+                            <label class="font-bold">$300.00</label>
+                        </div>
+                        <div class="flex justify-between">
+                            <label class="text-slate-800">VAT (20%)</label>
+                            <label class="font-bold">$60.00</label>
+                        </div>
+                        <div class="flex justify-between">
+                            <label class="text-slate-800">Total</label>
+                            <label class="font-bold">$360.00</label>
+                        </div>
+                        <div class="flex justify-between">
+                            <button class="font-bold px-6 py-2.5 bg-[#64b496] rounded text-white hover:bg-black">View Cart</button>
+                            <button class="font-bold px-6 py-2.5 rounded text-[#64b496] border-2 border-[#64b496]">Checkout</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
